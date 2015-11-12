@@ -9,6 +9,9 @@
 #ifndef SRLoginButtonConfig_h
 #define SRLoginButtonConfig_h
 
+#import "SRScanningView.h"
+#import "SRTransitionLoadingView.h"
+
 @class SRLoginButton;
 @protocol SRLoginButtonDelegate <NSObject>
 

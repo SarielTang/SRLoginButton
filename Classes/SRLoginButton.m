@@ -7,8 +7,6 @@
 //
 
 #import "SRLoginButton.h"
-#import "SRScanningView.h"
-#import "SRTransitionLoadingView.h"
 
 #define  MAIN_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define  MAIN_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
@@ -120,7 +118,7 @@
     
     self.rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     self.rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
-    self.rotationAnimation.duration = 1;
+    self.rotationAnimation.duration = 0.7;
     self.rotationAnimation.cumulative = YES;
     self.rotationAnimation.repeatCount = MAXFLOAT;
     
@@ -143,7 +141,7 @@
 
 /// 转场动画
 - (void) transitionAnimation {
-    [UIView animateWithDuration:0.7 animations:^{
+    [UIView animateWithDuration:0.8 animations:^{
         self.loadingView.loading = NO;
         // 圆开始变大
         self.loadingView.frame= CGRectMake(0, 0, MAIN_SCREEN_HEIGHT*2,MAIN_SCREEN_HEIGHT*2);
@@ -152,7 +150,7 @@
         self.rotationAnimation.repeatCount = 0;
         self.rotationAnimation.cumulative = NO;
         
-        self. timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(showNextPage) userInfo:nil repeats:NO];
+        self. timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(showNextPage) userInfo:nil repeats:NO];
         
         [self.loadingView.layer addAnimation:self.rotationAnimation forKey:@"rotationAnimation"];
         [self.superview addSubview:self.loadingView];
@@ -162,19 +160,23 @@
 
 /// 页面跳转
 - (void)showNextPage {
-    [UIView animateWithDuration:0.5 animations:^{
-        self.loadingView.alpha = 0;
+    [UIView animateWithDuration:0.6 animations:^{
+        self.loadingView.alpha = 0.9;
+    }completion:^(BOOL finished) {
         self.userInteractionEnabled = YES;
+        self.alpha = 0;
+//        self.loadingView.alpha = 0;
+        self.loadingView.loading = YES;
     }];
     
     ///显示跳转后的页面
     if ([self.delegate respondsToSelector:@selector(SRLoginButtonShowNextPage:)]) {
-        [self.delegate SRLoginButtonShowNextPage:self];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.delegate SRLoginButtonShowNextPage:self];
+        });
     }
     
-    self.alpha = 0;
-    self.loadingView.alpha = 0;
-    self.loadingView.loading = YES;
+    
 }
 
 @end

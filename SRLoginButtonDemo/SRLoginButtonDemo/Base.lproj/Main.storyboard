@@ -16,11 +16,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login.png" translatesAutoresizingMaskIntoConstraints="NO" id="N23-5E-9q6">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N23-5E-9q6" secondAttribute="bottom" id="PMF-ix-Fdy"/>
+                            <constraint firstItem="N23-5E-9q6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Rk8-hz-QKd"/>
+                            <constraint firstAttribute="trailing" secondItem="N23-5E-9q6" secondAttribute="trailing" id="aIY-3b-r2t"/>
+                            <constraint firstItem="N23-5E-9q6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yyG-V5-wP6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="N23-5E-9q6" id="Vnr-86-6Hp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Login.png" width="750" height="1334"/>
+    </resources>
 </document>

@@ -14,7 +14,11 @@
 		0DAD63491BDE479A0026E11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAD63471BDE479A0026E11D /* LaunchScreen.storyboard */; };
 		0DAD63541BDE479B0026E11D /* SRLoginButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAD63531BDE479B0026E11D /* SRLoginButtonDemoTests.m */; };
 		0DAD635F1BDE479B0026E11D /* SRLoginButtonDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAD635E1BDE479B0026E11D /* SRLoginButtonDemoUITests.m */; };
-		0DAD63A41BDE484F0026E11D /* SRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAD63A31BDE484F0026E11D /* SRLoginViewController.m */; };
+		0DD1CDF21BDF5D6900C10D58 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD1CDF11BDF5D6900C10D58 /* Home.png */; };
+		0DD1CDF41BDF5D7300C10D58 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD1CDF31BDF5D7300C10D58 /* Login.png */; };
+		0DD1CDF71BDF5E1F00C10D58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD1CDF61BDF5E1F00C10D58 /* ViewController.m */; };
+		0DD2BC7D1BF49990001BC914 /* SRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2BC7A1BF49990001BC914 /* SRLoginViewController.m */; };
+		0DD2BC7E1BF49990001BC914 /* SRTileAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD2BC7C1BF49990001BC914 /* SRTileAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +53,14 @@
 		0DAD635A1BDE479B0026E11D /* SRLoginButtonDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRLoginButtonDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAD635E1BDE479B0026E11D /* SRLoginButtonDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRLoginButtonDemoUITests.m; sourceTree = "<group>"; };
 		0DAD63601BDE479B0026E11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DAD63A21BDE484F0026E11D /* SRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLoginViewController.h; sourceTree = "<group>"; };
-		0DAD63A31BDE484F0026E11D /* SRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLoginViewController.m; sourceTree = "<group>"; };
+		0DD1CDF11BDF5D6900C10D58 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = ../Home.png; sourceTree = "<group>"; };
+		0DD1CDF31BDF5D7300C10D58 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		0DD1CDF51BDF5E1F00C10D58 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0DD1CDF61BDF5E1F00C10D58 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0DD2BC791BF49990001BC914 /* SRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLoginViewController.h; sourceTree = "<group>"; };
+		0DD2BC7A1BF49990001BC914 /* SRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLoginViewController.m; sourceTree = "<group>"; };
+		0DD2BC7B1BF49990001BC914 /* SRTileAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRTileAnimator.h; sourceTree = "<group>"; };
+		0DD2BC7C1BF49990001BC914 /* SRTileAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRTileAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,14 @@
 		0DAD63381BDE479A0026E11D /* SRLoginButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0DAD63A21BDE484F0026E11D /* SRLoginViewController.h */,
-				0DAD63A31BDE484F0026E11D /* SRLoginViewController.m */,
+				0DD2BC791BF49990001BC914 /* SRLoginViewController.h */,
+				0DD2BC7A1BF49990001BC914 /* SRLoginViewController.m */,
+				0DD2BC7B1BF49990001BC914 /* SRTileAnimator.h */,
+				0DD2BC7C1BF49990001BC914 /* SRTileAnimator.m */,
 				0DAD633C1BDE479A0026E11D /* AppDelegate.h */,
 				0DAD633D1BDE479A0026E11D /* AppDelegate.m */,
+				0DD1CDF51BDF5E1F00C10D58 /* ViewController.h */,
+				0DD1CDF61BDF5E1F00C10D58 /* ViewController.m */,
 				0DAD63421BDE479A0026E11D /* Main.storyboard */,
 				0DAD63451BDE479A0026E11D /* Assets.xcassets */,
 				0DAD63471BDE479A0026E11D /* LaunchScreen.storyboard */,
@@ -117,6 +131,8 @@
 		0DAD63391BDE479A0026E11D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0DD1CDF11BDF5D6900C10D58 /* Home.png */,
+				0DD1CDF31BDF5D7300C10D58 /* Login.png */,
 				0DAD633A1BDE479A0026E11D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -243,8 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD1CDF21BDF5D6900C10D58 /* Home.png in Resources */,
 				0DAD63491BDE479A0026E11D /* LaunchScreen.storyboard in Resources */,
 				0DAD63461BDE479A0026E11D /* Assets.xcassets in Resources */,
+				0DD1CDF41BDF5D7300C10D58 /* Login.png in Resources */,
 				0DAD63441BDE479A0026E11D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAD633E1BDE479A0026E11D /* AppDelegate.m in Sources */,
-				0DAD63A41BDE484F0026E11D /* SRLoginViewController.m in Sources */,
+				0DD1CDF71BDF5E1F00C10D58 /* ViewController.m in Sources */,
 				0DAD633B1BDE479A0026E11D /* main.m in Sources */,
+				0DD2BC7E1BF49990001BC914 /* SRTileAnimator.m in Sources */,
+				0DD2BC7D1BF49990001BC914 /* SRLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +522,7 @@
 				0DAD63651BDE479B0026E11D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DAD63661BDE479B0026E11D /* Build configuration list for PBXNativeTarget "SRLoginButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +531,7 @@
 				0DAD63681BDE479B0026E11D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DAD63691BDE479B0026E11D /* Build configuration list for PBXNativeTarget "SRLoginButtonDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +540,7 @@
 				0DAD636B1BDE479B0026E11D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

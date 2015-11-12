@@ -10,4 +10,6 @@
 
 @interface SRLoginViewController : UIViewController
 
+@property (nonatomic,strong)UIViewController *nextController;
+
 @end
